@@ -1,0 +1,109 @@
+/* Default styles for larger screens */
+
+
+
+
+.header-content {
+  position: relative;
+  top: 0;
+  z-index: 11;
+  align-items: center;
+  font-size: 18px;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  transform-style: preserve-3d;
+  perspective: 100px;
+  display: flex;
+
+}
+
+.header-content:before {
+  background: linear-gradient(
+      to bottom,
+      rgba(50, 240, 72, 0.2),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(https://cssanimation.rocks/levelup/public/images/background.jpg) no-repeat
+      bottom;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  
+}
+
+
+
+
+.header-content:after {
+  background: #F9FCFF;
+  content: "";
+  height: 40rem;
+  left: -5%;
+  position: absolute;
+    right: -5%;
+    top: 90%;
+  transform-origin: 0 0;
+  transform: rotateZ(-3deg);
+  z-index: 0;
+}
+.header-title,
+.header-subtitle {
+  color: #fff;
+}
+
+.header-title {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.header-subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+
+  
+}
+
+
+
+
+
+/* Button Animation */
+
+
+
+
+
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .header-content {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+    height: 50vh; /* Adjust the height for smaller screens */
+  }
+
+  .header-title,
+  .header-subtitle {
+    font-size: 24px; /* Adjust the font size for smaller screens */
+  }
+}
+
+
+.header-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

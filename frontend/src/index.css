@@ -1,0 +1,219 @@
+/* Global Styles */
+body {
+	margin: 0;
+	padding: 0;
+	min-width: fit-content;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+li {
+	list-style-type: none;
+}
+/* Container Styles */
+
+/* Image Styles */
+img {
+	width: 300px;
+	object-fit: cover;
+	aspect-ratio: 2/3;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+
+main {
+	background: #f9fcff;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding-block: 4px;
+	z-index: -1;
+  
+ /* Add some padding to prevent content from sticking to the edges */
+
+}
+/* Product List Styles */
+.product-list {
+	margin-top: 2rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	max-width: 1800px;
+	margin: 0 auto;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	gap: 2rem;
+
+}
+
+.main-header {
+	width: fit-content;
+	font-size: xx-large;
+	font-family: sans-serif;
+	font-weight: 500;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header:hover {
+	color: #3de1b5;
+}
+
+.main-header:after {
+	content: '';
+	display: block;
+	width: 90%;
+	height: 2px;
+	background: #d7d7d7;
+	margin: 0 auto;
+	margin-top: 15px;
+	border-radius: 3px;
+}
+
+/* Media queries for responsiveness */
+
+/* Product Card Styles */
+.product-card {
+	border: 1px solid #e0e0e0;
+	text-align: center;
+	background-color: #f9f9f9;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	width: 100%;
+  max-width: 21.875rem;
+	margin-top: 15px;
+
+	/* Media query for smaller screens (e.g., phones) */
+}
+
+.product-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Product Image Styles */
+.product-card .image {
+	height: 12.5rem;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px 10px 0px 0;
+}
+
+/* Product Details Styles */
+.product-card .details {
+	padding: 16px;
+	background-color: #f9f9f9;
+	border-radius: 0 0 10px 10px;
+}
+
+/* Text Styles */
+.product-card h2 {
+	font-size: 1.25rem;
+	margin-bottom: 8px;
+	color: #333;
+}
+
+.product-card p {
+	font-size: 1rem;
+	color: #777;
+	font-weight: 700;
+}
+
+.product-card .price {
+	font-size: 1.2rem;
+	color: #fb0000;
+	font-weight: 700;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.load-more-button {
+	background-color: #3de1b5;
+	border: 2px solid #3de1b5;
+	border-radius: 5px;
+	color: white;
+	padding: 8px;
+}
+
+.load-more-button:hover {
+	padding: 8px;
+	scale: 1.02;
+	cursor: pointer;
+}
+
+/* Fade-in Animation Styles */
+.fade-in {
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+button {
+	width: 200px;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 700;
+	cursor: pointer;
+	border: none;
+}
+
+@media only screen and (max-width: 1250px) {
+	.product-list {
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+	}
+	.product-card {
+    width: 100%; /* Use 100% width to adapt to smaller screens */
+    max-width: 300px; /* Use 100% width to adapt to smaller screens */
+
+    aspect-ratio: 6/9;
+}
+}
+@media only screen and (max-width: 768px) {
+	.product-list {
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+	}
+	.product-card {
+    width: 100%; /* Use 100% width to adapt to smaller screens */
+    max-width: 18.75rem; /* Use 100% width to adapt to smaller screens */
+
+}
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	.product-list {
+		grid-template-columns: repeat(1, 1fr);
+	}
+  .product-card {
+    width: 100%;
+
+    height: fit-content;
+}
+
+}

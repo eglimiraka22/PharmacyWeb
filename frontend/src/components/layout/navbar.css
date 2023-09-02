@@ -1,0 +1,124 @@
+/* Default styles for the navigation bar on larger screens */
+.navigation {
+  z-index: 100;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 0.5rem 0rem;
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  transition: transform 0.3s ease-in-out; /* Default transition for showing when scrolling up */
+}
+
+/* Brand name link */
+.brand-name {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+/* Navigation menu container */
+.navigation-menu {
+  margin-left: auto;
+  width: 50%;
+}
+
+/* Navigation menu items */
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+}
+
+/* Navigation menu list items */
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+/* Navigation menu links */
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%;
+}
+
+/* Hamburger menu icon for small screens */
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #283b8b;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+/* Hover effect for hamburger menu icon */
+.hamburger:hover {
+  background-color: #2642af;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  /* Display hamburger menu icon */
+  .hamburger {
+    display: block;
+  }
+
+  /* Style for expanded navigation menu on small screens */
+  .navigation-menu ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: white;
+    border-top: 1px solid black;
+    display: none;
+  }
+
+  /* Display expanded navigation menu */
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+
+  /* Style for navigation menu list items on small screens */
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Style for navigation menu links on small screens */
+  .navigation-menu li a {
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  /* Hover effect for navigation menu list items on small screens */
+  .navigation-menu li:hover {
+    background-color: #eee;
+  }
+}
+
+/* Hidden navbar styles for smooth transitions */
+.hidden-navbar {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transition both transform and opacity */
+}
