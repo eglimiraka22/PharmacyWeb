@@ -10,9 +10,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is a simple implementation of Pharmacy Website
 
-For the backend, I used Node.js, Express.js, and Mysql database locally with a table of products and a simple APIcall to get all products./ 
-For the frontend, I used React.js and Pure Css with css modules in react./
-For styling I could have also used Bootstrap or Tailwind Css but I wanted to show it build only with css./
+For the backend, I used Node.js, Express.js, and Mysql database locally with a table of products and a simple APIcall to get all products.\
+For the frontend, I used React.js and Pure Css with css modules in react.\
+For styling I could have also used Bootstrap or Tailwind Css but I wanted to show it build only with css.\
 In the project directory, you can run:
 
 Backend
