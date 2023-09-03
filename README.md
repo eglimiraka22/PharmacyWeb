@@ -19,7 +19,7 @@ Frontend:
 
 
 ## Screenshots
-PharmacyWeb\frontend\src\assets\Screenshot 2023-09-03 173123.png
+frontend\src\assets\Screenshot 2023-09-03 173123.png
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
