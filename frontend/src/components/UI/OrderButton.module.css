@@ -52,3 +52,22 @@
     transform: translateX(-45%) translateY(0) scale(1);
     transform-origin: bottom center;
   }
+
+
+
+  
+@media only screen and (max-width: 480px) {
+	
+  .orderButton{
+    padding: 3px 5px 3px;
+    margin-block: 5px;
+  }
+
+  button{
+    width: 100px;
+  }
+
+  .orderButton span{
+    font-size: small;
+  }
+}

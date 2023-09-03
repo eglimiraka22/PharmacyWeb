@@ -97,6 +97,10 @@ main {
 	width: 100%;
   max-width: 21.875rem;
 	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
 
 	/* Media query for smaller screens (e.g., phones) */
 }
@@ -208,12 +212,38 @@ button {
 
 @media only screen and (max-width: 480px) {
 	.product-list {
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 	}
   .product-card {
-    width: 100%;
+    width: 140px;
 
-    height: fit-content;
 }
+
+.product-card .details{
+	padding: 0px;
+}
+.product-card .image{
+	height: 6rem;
+}
+.product-card .price{
+	font-size: 1rem;
+}
+
+.product-card h2{
+	font-size: 0.8rem;
+}	
+
+.product-card p {
+	font-size: 0.6rem;
+	color: #777;
+	font-weight: 700;
+}
+p{
+	padding: 0;
+	margin: 0;
+	font-size: 0.8rem;
+}
+
+	
 
 }

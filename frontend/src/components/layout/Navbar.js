@@ -1,5 +1,6 @@
 import React from 'react'
 import './navbar.css'
+import HeaderCartButton from './HeaderCartButton'
 import {useState,useEffect} from 'react'
 const Navbar = () => {
 
@@ -27,9 +28,14 @@ const Navbar = () => {
       }, []);
   return (
     <nav className={`navigation ${isNavHidden ? 'hidden-navbar' : ''}`}>
+    <div className='navigation-items'>
+    <div className='brand-cart'>
     <a href="/" className='brand-name'>
       PharmacyShop
     </a>
+   <p><HeaderCartButton/></p>
+    </div>
+
     <button className='hamburger'  onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}>
@@ -45,8 +51,8 @@ const Navbar = () => {
           d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
           clipRule="evenodd"
         />
-      </svg>): (<svg xmlns="http://www.w3.org/2000/svg" fill="none" color='white' viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>): (<svg xmlns="http://www.w3.org/2000/svg" fill="none" color='white' viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
 </svg>
 )}
     </button>
@@ -63,6 +69,7 @@ const Navbar = () => {
           <a href="/">Contact</a>
         </li>
       </ul>
+    </div>
     </div>
   </nav>
   )

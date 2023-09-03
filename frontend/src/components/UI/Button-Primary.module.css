@@ -6,11 +6,11 @@
     text-transform: uppercase;
     padding-left: 0;
     padding-right: 0;
+   
   }
   
   .greenButton span {
     position: relative;
-    position: 400ms;
   }
   
   .greenButton span::after {
@@ -24,4 +24,30 @@
   .greenButton:hover span::after {
     opacity: 1;
     right: -20px;
+  }
+
+
+  @media only screen and (max-width: 480px) {
+	
+    .greenButton{
+      padding: 5px 5px 5px;
+      margin-block: 5px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+  
+    .greenButton span {
+      padding: 5px 5px 5px;
+
+      position: relative;
+      font-size: x-small;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .orderButton span{
+      font-size: small;
+    }
   }
