@@ -19,7 +19,23 @@ Frontend:
 
 
 ## Screenshots
-frontend\src\assets\Screenshot 2023-09-03 173123.png
+![Alt text](frontend/src/assets/Screenshot%202023-09-03%20173036.png)
+
+#
+![Alt text](frontend/src/assets/Screenshot%202023-09-03%20173123.png)
+
+#
+![Alt text](frontend/src/assets/Screenshot%202023-09-03%20173200.png)
+
+#
+![Alt text](frontend/src/assets/Screenshot%202023-09-03%20173251.png)
+
+#
+![Alt text](frontend/src/assets/Screenshot%202023-09-03%20173225.png)
+
+
+
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
